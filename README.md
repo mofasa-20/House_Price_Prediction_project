@@ -13,6 +13,26 @@ The data belong to Ames, Ames (/eɪmz/) is a city in Story County, Iowa, United 
 In 2020, Ames had a population of 66,427, making it the state's ninth largest city. Iowa State University was home to 33,391 students as of fall 2019, which make up approximately one half of the city's population.
 
 ![image](https://user-images.githubusercontent.com/79675883/162915985-4d9013a0-4d7f-4518-8886-51e3a62abb67.png)
+![image](https://user-images.githubusercontent.com/79675883/162940978-921df3c5-099d-4419-bb0f-5e176475cd3f.png)
+![image](https://user-images.githubusercontent.com/79675883/162941027-5c4bebf5-6732-4e41-9428-3370debf2b2b.png)
+![image](https://user-images.githubusercontent.com/79675883/162941054-9613120a-2abe-4f95-855b-9f6f1220665d.png)
+![image](https://user-images.githubusercontent.com/79675883/162941087-8fb191b6-0723-4e05-81ca-0cc391a7c1fd.png)
+
+**Exploratory Data Analysis (EDA).**
+
+By conducting explanatory data analysis, we obtain a better understanding of our data. This yields insights that can be helpful later when building a model, as well as insights that are independently interesting.
+
+In this report, we describe our approach to these steps and the results that we obtained.
+
+Exploratory Data Analysis
+
+In order to understand our data, we first perform exploratory data analysis. This will provide us with insights that will be useful in building prediction models, as well as insights that may be of interest to Real Estates Agents or stakeholders. As part of the Exploratory
+
+Data Analysis we aim to:
+Look into the relationship between each variables and sales price percentage change, and identify any patterns. For example, between the year of construction of a house and its annual percent price change.
+
+We will also analyze relationships between the features. This may reveal that certain features are redundant and this would help the subsequent analysis.
+
 
 Output Label Analysis
 
@@ -277,6 +297,29 @@ plt.title('Correlation with Target', fontsize = 20)
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/79675883/162938545-d331bbbb-1ceb-4772-9596-0ce25f0239e8.png)
+
+**Summary**
+
+
+•	A company such as Zillow or any real estate company would benefit from this by being able to see how prices for each house are predicted.
+
+•	If needed the companies can ask to add more onto this dataset to try and predict other type of homes in a different area or even try to calculate monthly rental prices
+
+•	Individual Buyers can predict the sales price of each house from a neighborhood in Ames, Iowa.
+
+•	By analyzing historical data for house prices with various relevant features, I can establish some interesting patterns and trends. Using machine-learning techniques, then I would be able to identify a subset of the original features that are in a sense sufficient to describe the data. 
+
+•	By selecting the most important features, I can then train an XGBoost model for change in house price prediction, and find the model accuracy rate. 
+
+•	This model can therefore be used to predict, for example, house price is likely to increase and decrease in price based of different attributes.
+
+**References**
+
+•	Kaggle competition, https://www.kaggle.com/c/house-prices-advanced-regression-techniques
+•	https://www.mckinsey.com/industries/technology-media-and-telecommunications/how-we-help-clients/digital-it-services
+•	Zillow zestimate, https://www.zillow.com/blog/zestimate-updates-230614/
+•	https://towardsdatascience.com/how-to-use-pca-tsne-xgboost-and-finally-bayesian-optimization-to-predict-the-price-of-houses-626dbaf242ae
+
 
 
 
