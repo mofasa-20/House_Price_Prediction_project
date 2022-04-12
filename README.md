@@ -262,7 +262,8 @@ def get_top_abs_correlations(df, n=5):
     labels_to_drop = get_redundant_pairs(df)
     au_corr = au_corr.drop(labels=labels_to_drop).sort_values(ascending=False)
     return au_corr[0:n]
-    ```
+```
+
 ```
 corr_data = get_top_abs_correlations(df2.iloc[:,1:-1].corr(), n=16)
 corr_data
@@ -270,7 +271,7 @@ corr_data
 ![image](https://user-images.githubusercontent.com/79675883/162937776-6657ca38-746c-40a9-b12f-49c96177eccf.png)
 
 ```
-##checking correation with output data
+checking correation with output data
 plot = df3.iloc[:,1:-1].corrwith(df3["SalePrice"]).plot.barh(figsize =(10,10), fontsize=12)
 plt.title('Correlation with Target', fontsize = 20)
 plt.show()
